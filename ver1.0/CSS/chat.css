@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.overlay {
+  height: 100vh;
+  width:100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(62, 62, 62, 0.228);
+  backdrop-filter: blur(2px);
+  animation: opacity_blr 1s ease-in-out;
+}
+
+#chat {
+  position: fixed;
+  height: 100vh;
+  width: 30vw;
+  bottom: 0px;
+  right: 0px;
+  background-color: #fff;
+  border: 0;
+  z-index: 10;
+  border-radius: 10px;
+  box-shadow: -2px 0 8px 1px #757575;
+}
+.chat_slide_left{
+  animation: slide_left 0.4s ease-in-out;
+}
+.chat_slide_right{
+  animation: slide_right 0.4s ease-in-out;
+}
+
+.chat-navbar {
+  height: 12vh;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  background-color: #baabab;
+  display: flex;
+  border-top-left-radius: 10px;
+}
+
+.exit {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 30px;
+  color: #444;
+  margin: 0 5px;
+}
+
+.chat-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 10px;
+  color: #444;
+}
+
+.chat-input {
+  position: absolute;
+  bottom: 0px;
+  align-items: center;
+  width: 30vw;
+}
+
+.text {
+  width: 30vw;
+  height: 6vh;
+  padding: 10px 90px 10px 20px;
+  border: 0;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 -2px 8px 1px #bbb;
+}
+
+.text:focus {
+  outline: none;
+}
+
+#send {
+  height: 4vh;
+  width: 8vh;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  padding: 5px;
+  position: fixed;
+  right: 15px;
+  bottom: 1.1vh;
+  font-size: 2vh;
+  text-transform: uppercase;
+  background-color: #808080;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+@keyframes slide_left {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes slide_right {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+@keyframes opacity_blr {
+  0%{
+    opacity: 0;
+    backdrop-filter: blur(0);
+  }
+  100%{
+    opacity: 1;
+    backdrop-filter: blur(2px);
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px;
+}
+
+td:nth-last-child(2) {
+  text-align: right;
+}

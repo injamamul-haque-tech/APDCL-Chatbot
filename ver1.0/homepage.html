@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APDCL chatbot</title>
+  <link rel="stylesheet" href="CSS/homepage.css" />
+  <link rel="stylesheet" href="CSS/chat.css" />
+  <link rel="stylesheet" href="CSS/msg.css" />
+  <link rel="stylesheet" href="CSS/option_btns.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/75150a486e.js" crossorigin="anonymous"></script>
+  <div class="navbar">
+    <img src="IMG/apdcl_logo.png" alt="apdcl_logo" />
+    <div class="desc">
+      <h1>ASSAM POWER DISTRIBUTION COMPANY LIMITED</h1>
+      <h3>A Govt. of Assam Public Limited Company</h3>
+    </div>
+  </div>
+  
+  <div class="chatbot">
+    <img src="IMG/icon.png" alt="bot" id="icon" class="chatbot-icon" />
+  </div>
+  <div id="chat" class="chat_slide_left">
+    <div class="overlay"></div>
+    <div class="chat-navbar">
+      <i class="fa-regular fa-circle-xmark exit" id="exit"></i>
+      <p class="chat-heading">CHATBOT</p>
+    </div>
+    
+    <div class="msg">
+      <ul id="msg">
+      </ul>
+      
+      <div class="yes_noOptions">
+        <button id="yes" class="option_btns" value="yes">YES</button>
+        <button id="no" class="option_btns" value="no">NO</button>
+      </div>
+
+      <div class="complaintMenu">
+        <button class="option_btns" name="voltage_fluctuation" value="voltage_fluctuation">          
+          Voltage Fluctuation
+        </button>
+        <button class="option_btns" name="incorrect_readings" value="incorrect_readings">          
+          Incorrect Meter Readings
+        </button><br>
+        <button class="option_btns" name="payment_error" value="payment_error">          
+          Payment Error
+        </button>
+        <button class="option_btns" name="others" value="others">          
+          Others...
+        </button><br>
+        <button id="back" class="option_btns" value="back">
+          <i class="fa-solid fa-arrow-left"></i>  
+          Go back
+        </button>
+      </div>
+      <div class="goBack">
+        <button id="back" class="option_btns">
+          <i class="fa-solid fa-arrow-left"></i>  
+          Go back (or type "bye")
+        </button>
+      </div>
+      
+      <div class="menuBtnOptions">
+        <h2 class="bot-msg">Select an option from below:</h2>
+        <div>
+          <button class="option_btns" name="prepaid_bal" value="prepaid_bal">
+            Prepaid Balance
+          </button>
+          <button class="option_btns" name="last_bill_details" value="last_bill_details">
+            Last Bill Details
+          </button><br>
+          <button class="option_btns" name="last_recharge_details" value="last_recharge_details">
+            Last Recharge Details
+          </button>
+          <button class="option_btns" name="mob_no" value="mobile_no_update">
+            Mobile number update
+          </button>
+          <button class="option_btns" name="tips" value="tips">
+            Energy Efficiency tips
+          </button>
+          <button class="option_btns" name="complaint" value="complaint">
+            Lodge Complaint
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="chat-input">
+      <input type="text" placeholder="Enter your text" class="text" id="userinput" autocomplete="off" name="inputText">
+      <button id="send" onclick="talk()">Send</button>
+    </div>
+  </div>
+  <script src="JS/append_chats.js"></script>
+  <script src="JS/chat_show_hide.js"></script>
+  <script src="JS/credentials.js"></script>
+  <script src="JS/user_bot_response.js"></script>
+  <script src="JS/menu_show.js"></script>
+  <script src="JS/goBack.js"></script>
+  <script src="JS/complaint_menu_show.js"></script>
+  <script src="JS/JS_MenuBtns/showTips.js"></script>
+  <script src="JS/JS_MenuBtns/lodgeComplaint.js"></script>
+  <script src="JS/JS_MenuBtns/updateMobileNo.js"></script>
+  <script src="JS/JS_MenuBtns/handlePrepaidBalance.js"></script>
+  <script src="JS/JS_MenuBtns/handleRechargeDetails.js"></script>
+  <script src="JS/JS_MenuBtns/handleLastPaymentDetails.js"></script>
+</body>
+
+</html>

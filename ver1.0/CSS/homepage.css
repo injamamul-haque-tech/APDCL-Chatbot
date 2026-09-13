@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(186, 171, 171);
+    height: 12vh;
+}
+
+.desc {
+    margin: 0 20px;
+}
+
+.navbar img {
+    margin-right: 10px;
+    height: 9vh;
+    width: 9vh;
+    margin: 15px 25px;
+}
+
+.navbar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot {
+    display: inline;
+    position: fixed;
+    bottom: 80px;
+    right: 120px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(186, 171, 171);
+    cursor: pointer;
+    animation: glow 2s infinite ease-in-out;
+}
+
+.chatbot-icon {
+    height: 65px;
+    width: 65px;
+    transition: 0.3s;
+}
+
+.chatbot-icon:hover {
+    height: 70px;
+    width: 70px;
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px #68d2f0, 0 0 10px #f068d7, 0 0 10px #68d2f0, 0 0 10px #68d2f0, 0 0 10px #733367;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #f068d7, 0 0 20px #68d2f0, 0 0 20px #f068d7, 0 0 20px #f068d7, 0 0 20px #163c4c;
+    }
+}

@@ -1,0 +1,42 @@
+.blr {
+    width: 80vw;
+    background-color: #f5f3ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+table {
+    margin: 10px 20px;
+}
+
+td {
+    width: 120px;
+}
+
+.b-separator{
+    width: 20px;
+    text-align: center;
+}
+
+.consumer_head {
+    text-align: center;
+}
+
+#chart_div {
+    height: 50vh;
+    width: 70vw;
+}
+select{
+    width: 10vw;
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+    margin: 1vh;
+}
