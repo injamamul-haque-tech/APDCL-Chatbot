@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f5f3ff;
+    box-shadow: 0 0 15px rgb(44, 46, 64);
+    height: 12vh;
+    margin: 5px 10px;
+    border-radius: 20px;
+    color: #1e1e1e;
+}
+
+.company-desc {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+body {
+    background-image: url("../IMG/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 25px;
+    cursor: pointer;
+    padding: 0.5vh;
+    color: #1e1e1e;
+}
+
+
+.admin-icon {
+    display: block;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.admin-text {
+    font-size: 2vh;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+}
+
+.admin:hover .admin-text,
+.admin:hover .admin-icon {
+    color: #2c2c2c;
+}
+
+.desc {
+    margin: 0 20px;
+}
+
+.sec-name {
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+}
+
+.pri-name {
+    font-weight: 500;
+}
+
+.navbar img {
+    margin-right: 10px;
+    height: 9vh;
+    width: 9vh;
+    margin: 15px 25px;
+}
+
+.navbar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot {
+    display: inline;
+    position: fixed;
+    bottom: 80px;
+    right: 120px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f5f3ff;
+    cursor: pointer;
+    animation: glow 2s infinite ease-in-out;
+}
+
+.chatbot-icon {
+    height: 65px;
+    width: 65px;
+    transition: 0.3s;
+}
+
+.chatbot-icon:hover {
+    height: 70px;
+    width: 70px;
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px #2f2996, 0 0 10px #AFEEEE, 0 0 10px #D8F, 0 0 10px #AFEEEE, 0 0 10px #2a2587;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #2b258f, 0 0 20px #3d37a3, 0 0 20px #AFEEEE, 0 0 20px rgb(128, 121, 156), 0 0 20px #9694c1;
+    }
+}

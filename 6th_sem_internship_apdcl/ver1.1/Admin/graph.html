@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Analytics</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="Admin-CSS/adminstyle.css">
+    <link rel="stylesheet" href="Admin-CSS/graph.css">
+</head>
+
+<body>
+    <div class="wrapper blr">
+        <div class="admin-nav">
+            <h2>Track user activities</h2>
+        </div>
+        <div class="user-select">
+            <select id="users">
+                <option value="">--select--</option>
+                <option value="230700">230700</option>
+                <option value="230701">230701</option>
+                <option value="230702">230702</option>
+            </select>
+        </div>
+        <div class="user-details">
+        </div>
+        <div id="chart_div"></div>
+    </div>
+</body>
+<script src="Admin-JS/load-graph.js"></script>
+<script src="Admin-JS/getSelectedValue.js"></script>
+
+</html>
